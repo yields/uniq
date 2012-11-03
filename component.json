@@ -1,0 +1,15 @@
+{
+  "name": "uniq",
+  "repo": "yields/uniq",
+  "description": "array uniq",
+  "version": "0.0.1",
+  "keywords": ["uniq", "unique", "array"],
+  "dependencies": {
+    "component/indexOf": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
