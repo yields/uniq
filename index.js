@@ -3,16 +3,15 @@
  * dependencies
  */
 
-var indexOf = require('indexof');
+try {
+  var indexOf = require('indexof');
+} catch(e){
+  var indexOf = require('indexof-component');
+}
 
 /**
- * create duplicate free array
+ * Create duplicate free array
  * from the provided `arr`.
- *
- * example:
- *
- *          uniq(['foo', 'foo']);
- *          // > ['foo']
  *
  * @param {Array} arr
  * @return {Array}
