@@ -14,13 +14,21 @@ try {
  * from the provided `arr`.
  *
  * @param {Array} arr
+ * @param {Array} select
  * @return {Array}
  */
 
-module.exports = function (arr) {
+module.exports = function (arr, select) {
   var len = arr.length, ret = [], v;
+  select = select ? (select instanceof Array ? select : [select]) : false;
+
   for (var i = 0; i < len; i++) {
-    if (!~indexOf(ret, v = arr[i])) ret.push(v);
+    v = arr[i];
+    if (select && !~indexOf(select, v)) {
+      ret.push(v);
+    } else if (!~indexOf(ret, v)) {
+      ret.push(v);
+    }
   }
   return ret;
 };
