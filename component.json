@@ -6,7 +6,7 @@
   "twitter": "retrofox",
   "keywords": ["uniq", "unique", "array"],
   "dependencies": {
-    "component/indexOf": "*"
+    "component/indexof": "*"
   },
   "development": {},
   "license": "MIT",
