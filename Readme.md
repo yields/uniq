@@ -41,3 +41,7 @@ Run tests
 ```
 make test
 ```
+
+## License
+
+  MIT
