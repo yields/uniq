@@ -1,19 +1,45 @@
 
-# uniq
+# Uniq
 
-  array uniq
+  Remove repeated elements of an Array
 
 ## Installation
 
-    $ component install yields/uniq
+```
+$ npm install uniq-component
+$ component install yields/uniq
+```
 
 ## API
 
 ### uniq(arr)
 
-```javascript
-uniq([uniq, uniq]);
-// > [uniq]
+```js
+var uniq = require('uniq');
+var arr = [1, 2, 3, 1, 2, 3, 1, 2, 3];
+uniq(arr); // -> [1, 2, 3]
+```
+
+### uniq(arr, select)
+
+```js
+var uniq = require('uniq');
+var arr = [1, 2, 3, 1, 2, 3, 1, 2, 3];
+uniq(arr, [1, 3]); // // remove specific elements -> [1, 2, 3, 2, 2]
+```
+
+## Tests
+
+Download testing dependecies
+
+```
+npm install
+```
+
+Run tests
+
+```
+make test
 ```
 
 ## License
