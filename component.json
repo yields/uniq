@@ -2,10 +2,11 @@
   "name": "uniq",
   "repo": "yields/uniq",
   "description": "array uniq",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "twitter": "retrofox",
   "keywords": ["uniq", "unique", "array"],
   "dependencies": {
-    "component/indexOf": "*"
+    "component/indexof": "0.0.1"
   },
   "development": {},
   "license": "MIT",
